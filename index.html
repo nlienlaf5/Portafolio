@@ -141,10 +141,48 @@
 
         <section id="codigo-web" class="seccion-proyectos">
             <h2>Desarrollo Web & Código Fuente</h2>
+            
             <div class="proyecto-bloque">
-                <div class="proyecto-info" style="flex: 1;">
+                <div class="proyecto-info">
                     <h3>Estructura HTML5 y Estilos CSS Modernos</h3>
                     <p>Sitio web de portafolio personal desarrollado desde cero con diseño responsive, variables CSS, distribución con Flexbox y despliegue continuo mediante GitHub Pages.</p>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-slide active">
+                            <img src="img/PaginaPortafolioDos.jpeg" alt="Vista previa del portafolio">
+                            <div class="slide-caption">Vista Previa: Estética y Secciones</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <pre><code>:root {
+    --bg-dark: #1a1e23;
+    --card-bg: #24292e;
+    --accent: #f1c40f;
+}
+.proyecto-bloque {
+    background: var(--card-bg);
+    border-left: 6px solid var(--accent);
+}</code></pre>
+                            <div class="slide-caption">Fragmento CSS: Diseño de Tarjetas</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <pre><code>&lt;section id="codigo-web"&gt;
+  &lt;h2&gt;Desarrollo Web&lt;/h2&gt;
+  &lt;div class="proyecto-bloque"&gt;
+    &lt;div class="proyecto-info"&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                            <div class="slide-caption">Estructura HTML Semántica</div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
                 </div>
             </div>
         </section>
